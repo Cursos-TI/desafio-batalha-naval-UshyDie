@@ -4,11 +4,11 @@
 // Desafio Batalha Naval - MateCheck
 
 // ** Definindo constantes para o tamanho do tabuleiro, tamanho do navio, tamanho das habilidades e  seus valores representativos 
-#define TAMANHO_TABULEIRO 10 // Tamanho do tabuleiro, [10][10]
-#define TAMANHO_NAVIO 3 // Tamanho do navio, que é 3 para este desafio
-#define VALOR_NAVIO 3 // Valor que representa uma parte do vetor navio no tabuleiro
-#define TAMANHO_HABILIDADE 5 // Tamanho da matriz para habilidades [5][5]
-#define VALOR_HABILIDADE 1 // Valor que representa a parte preenchida da matriz habilidade
+#define TAMANHO_TABULEIRO 10 
+#define TAMANHO_NAVIO 3 
+#define VALOR_NAVIO 3 
+#define TAMANHO_HABILIDADE 5 
+#define VALOR_HABILIDADE 1 
 
 // ** Estrutura para armazenar a posição de um navio no tabuleiro
 // A estrutura Posicao armazena as coordenadas x e y de um navio no tabuleiro
@@ -17,8 +17,9 @@ typedef struct {
     int y; // Coordenada y -> coluna[j]
 } Posicao;
 
-// Estrutura para definir as direções possíveis de posicionamento dos navios
-// A enum Direcao define as direções possíveis para posicionar um navio no tabuleiro
+// ** Enum Direcao para definir as direções possíveis de posicionamento dos navios
+// As direções são: HORIZONTAL, VERTICAL, DIAGONAL_PRINCIPAL e DIAGONAL_SECUNDARIA
+
 typedef enum {
   HORIZONTAL,
   VERTICAL,
